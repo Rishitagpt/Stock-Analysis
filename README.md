@@ -1,63 +1,75 @@
-#### Comprehensive Quantitative Analysis of Stock Market Data
+# 📊 Stock Market Analysis Project
 
-### Project Overview
-This project aimed to perform a comprehensive quantitative analysis of stock market data using various statistical and inferential techniques. The analysis included descriptive statistics, time series analysis, volatility analysis, correlation analysis, comparative analysis, advanced metrics (Sharpe Ratio, Beta, CAGR), and inferential statistics with hypothesis testing. The primary goal was to derive meaningful insights about the performance, risk, and relationships of different stocks.
+A comprehensive quantitative analysis of stock market data using Python.  
+This project explores the performance, risk, and relationships of key stocks using statistics, time series analysis, and financial metrics.
 
-### Data Description
-The dataset consists of daily stock prices for multiple companies, including their opening, closing, high, low, adjusted close prices, and trading volume. The stocks analyzed were AAPL, GOOG, MSFT, and NFLX.
+---
 
-### Analysis Components
+## 📁 Dataset Overview
 
-#### Descriptive Statistics
-Descriptive statistics provided a summary of key statistical measures such as mean, median, standard deviation, and percentiles for the closing prices of each stock. Key observations include:
-- *AAPL*: Average closing price of $158.24 with a standard deviation of $7.36.
-- *GOOG*: Average closing price of $100.63 with a standard deviation of $6.28.
-- *MSFT*: Average closing price of $275.04 with a standard deviation of $17.68.
-- *NFLX*: Average closing price of $327.61 with a standard deviation of $18.55.
+The dataset (`stocks.csv`) contains daily trading data for major tech stocks:
 
-#### Time Series Analysis
-The time series analysis revealed the trends and patterns of closing prices over time. Notable observations include:
-- *AAPL and MSFT*: Showed a general upward trend during the period.
-- *NFLX*: Exhibited more pronounced fluctuations compared to other stocks.
-- *GOOG*: Displayed relatively stable price movements.
+- 📈 **Stocks Analyzed**: AAPL, GOOG, MSFT, NFLX  
+- 📅 **Fields Included**: Date, Open, High, Low, Close, Adj Close, Volume
 
-#### Volatility Analysis
-Volatility was measured using the standard deviation of closing prices:
-- *NFLX*: Highest volatility with a standard deviation of $18.55.
-- *MSFT*: Next highest, with $17.68.
-- *AAPL*: Lower volatility at $7.36.
-- *GOOG*: Least volatile with $6.28.
+---
 
-#### Correlation Analysis
-The correlation matrix indicated the relationships between the stocks:
-- *AAPL and MSFT*: Showed a higher positive correlation, suggesting that their prices tend to move together.
-- *GOOG and NFLX*: Showed varying degrees of positive correlation with other stocks, indicating different degrees of price relationship.
+## 🔍 Analysis Performed
 
-#### Comparative Analysis
-The percentage change in closing prices from the start to the end of the period highlighted performance differences:
-- *MSFT*: Highest positive change of approximately 16.10%.
-- *AAPL*: Positive change of 12.23%.
-- *GOOG*: Slight negative change of -1.69%.
-- *NFLX*: Significant negative change of -11.07%.
+### 1. 🧮 Descriptive Statistics
+- Mean, Median, Standard Deviation
+- Percentiles, Min/Max, etc.
 
-### Advanced Metrics
-- *Sharpe Ratio*: Indicates the risk-adjusted return. Higher values are better.
-- *CAGR*: Compound Annual Growth Rate shows the mean annual growth rate of an investment over a specified period of time longer than one year.
+### 2. 📉 Time Series & Volatility Analysis
+- Rolling mean & std deviation
+- Visualization of price fluctuations
 
-### Inferential Statistics and Hypothesis Testing
-- *Normality Test (Shapiro-Wilk Test)*:
-  - Most daily returns were found to follow a normal distribution.
-- *T-Test (AAPL vs. MSFT)*:
-  - No significant difference between the daily returns of AAPL and MSFT (p-value > 0.05).
-- *ANOVA Test*:
-  - No significant difference in the daily returns across AAPL, GOOG, MSFT, and NFLX (p-value > 0.05).
+### 3. 🔗 Correlation & Comparative Analysis
+- Correlation matrix across stocks
+- Side-by-side trend comparisons
 
-### Conclusions
-Based on the analyses performed, the following conclusions were drawn:
-- *Descriptive Analysis*: MSFT and NFLX had higher average closing prices and greater volatility, indicating they were more volatile investments.
-- *Time Series Trends*: AAPL and MSFT showed consistent upward trends, while NFLX experienced significant fluctuations.
-- *Volatility Analysis*: NFLX was the most volatile stock, suggesting higher risk.
-- *Correlation Analysis*: AAPL and MSFT had higher positive correlations, implying that their prices tend to move together.
-- *Performance Comparison*: MSFT showed the best performance over the period with a significant positive change, while NFLX had the worst performance with a notable decline.
-- *Advanced Metrics*: MSFT had the highest Sharpe ratio, indicating the best risk-adjusted return. 
-- *Hypothesis Testing*: No significant difference in the daily returns across different stocks, and the daily returns generally followed a normal distribution.
+### 4. 📊 Advanced Metrics
+- **Sharpe Ratio**: Risk-adjusted return  
+- **Beta**: Stock sensitivity to market  
+- **CAGR**: Compound Annual Growth Rate
+
+### 5. 📐 Inferential Statistics
+- Hypothesis testing
+- Confidence intervals and significance levels
+
+---
+
+## 🛠️ Tools & Libraries Used
+
+- Python 🐍
+- Pandas
+- NumPy
+- Matplotlib / Seaborn
+- SciPy
+- Jupyter Notebook
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repo or download the files:
+```bash
+git clone https://github.com/your-username/Stock-Analysis.git
+cd Stock-Analysis
+```
+2. Open the notebook:
+```bash
+jupyter notebook stocks_analysis_using_pyth.ipynb
+```
+3. Run the cells and explore the analysis.
+
+---
+
+## 📁 Project Structure
+
+```text
+Stock-Analysis-main/
+├── stocks_analysis_using_pyth.ipynb
+├── stocks.csv
+└── README.md
+```
