@@ -14,6 +14,19 @@ The dataset (`stocks.csv`) contains daily trading data for major tech stocks:
 
 ---
 
+## 📸 Project Screenshots
+
+<p align="center">
+  <img src="time_series.png" alt="Screenshot 1" width="45%"/>
+  <img src="correlation_matrix.png" alt="Screenshot 2" width="45%"/>
+</p>
+<p align="center">
+  <img src="percentage_change.png" alt="Screenshot 3" width="45%"/>
+  <img src="risk_vs_return.png" alt="Screenshot 4" width="45%"/>
+</p>
+
+---
+
 ## 🔍 Analysis Performed
 
 ### 1. 🧮 Descriptive Statistics
@@ -54,7 +67,7 @@ The dataset (`stocks.csv`) contains daily trading data for major tech stocks:
 
 1. Clone this repo or download the files:
 ```bash
-git clone https://github.com/your-username/Stock-Analysis.git
+git clone https://github.com/Rishitagpt/Stock-Analysis.git
 cd Stock-Analysis
 ```
 2. Open the notebook:
@@ -73,3 +86,4 @@ Stock-Analysis-main/
 ├── stocks.csv
 └── README.md
 ```
+
